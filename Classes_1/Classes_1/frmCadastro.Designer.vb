@@ -30,6 +30,7 @@ Partial Class frmCadastro
         Me.lblIdentidade = New System.Windows.Forms.Label()
         Me.txtTelefone = New System.Windows.Forms.TextBox()
         Me.lblTelefone = New System.Windows.Forms.Label()
+        Me.btnCadastrar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'txtNome
@@ -96,11 +97,21 @@ Partial Class frmCadastro
         Me.lblTelefone.TabIndex = 7
         Me.lblTelefone.Text = "Telefone"
         '
+        'btnCadastrar
+        '
+        Me.btnCadastrar.Location = New System.Drawing.Point(134, 122)
+        Me.btnCadastrar.Name = "btnCadastrar"
+        Me.btnCadastrar.Size = New System.Drawing.Size(75, 23)
+        Me.btnCadastrar.TabIndex = 8
+        Me.btnCadastrar.Text = "Cadastrar"
+        Me.btnCadastrar.UseVisualStyleBackColor = True
+        '
         'frmCadastro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(369, 283)
+        Me.Controls.Add(Me.btnCadastrar)
         Me.Controls.Add(Me.lblTelefone)
         Me.Controls.Add(Me.txtTelefone)
         Me.Controls.Add(Me.lblIdentidade)
@@ -123,4 +134,5 @@ Partial Class frmCadastro
     Friend WithEvents lblIdentidade As System.Windows.Forms.Label
     Friend WithEvents txtTelefone As System.Windows.Forms.TextBox
     Friend WithEvents lblTelefone As System.Windows.Forms.Label
+    Friend WithEvents btnCadastrar As System.Windows.Forms.Button
 End Class
